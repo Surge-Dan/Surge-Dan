@@ -1,6 +1,6 @@
 Hi, 👋  I'm <a href="https://surge-dan.github.io/" target="_blank">MEI NAIDAN (Daniel)</a> 
-- 👀 I’m interested in Machine Learing(ML) and Deep Learning(DL)
-- 🌱 I’m currently studying as an Undergraduate
+- 👀 I’m interested in Machine Learing(ML) & Deep Learning(DL) & Multimodal Sentiment Aanalysis(MSA)
+- 🌱 I’m currently studying as an Undergraduate(GDUFS)
 - 💞️ I’m looking to collaborate on AI
 - 📫 How to reach me: DanielMuei@outlook.com
 
