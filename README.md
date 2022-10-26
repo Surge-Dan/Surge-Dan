@@ -14,7 +14,7 @@ You can click the Preview link to take a look at your changes.
 
 <!--END_SECTION:waka-->
 
-If you like ~~Daniel or me~~ or my projects, you can buy me a ☕ coffee 🍉 / 🍦 or 🍰 cake at [Daniel Sponsors](https://surge-dan.github.io/sponsor.html) to support me, click the button. Your name will be shown at [https://surge-dan.github.io/sponsor.html](https://surge-dan.github.io/sponsor.html).
+If you like ~~Daniel or me~~ or my projects, you can buy me a ☕ coffee 🍉 / 🍦 / 🍰 at [Daniel Sponsors](https://surge-dan.github.io/sponsor.html) to support me, click the button. Your name will be shown at [https://surge-dan.github.io/sponsor.html](https://surge-dan.github.io/sponsor.html).
 
 <!--START_SECTION:sponsors-->
 <a href="https://surge-dan.github.io/sponsor.html" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" ></a>
