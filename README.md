@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Surge-Dan
+Hi, 👋  I'm <a href="https://surge-dan.github.io/" target="_blank">MEI NAIDAN (Daniel)</a> 
 - 👀 I’m interested in Machine Learing(ML) and Deep Learning(DL)
 - 🌱 I’m currently studying as an Undergraduate
 - 💞️ I’m looking to collaborate on AI
@@ -8,3 +8,13 @@
 Surge-Dan/Surge-Dan is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+
+<img align="right" alt="GIF" src="https://github.com/abhisheknaiidu/abhisheknaiidu/blob/master/code.gif?raw=true" width="343" height="220" title="Do what you like, and do it best!"> &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<!--END_SECTION:waka-->
+
+If you like ~~Daniel or me~~ or my projects, you can buy me a ☕ coffee 🍉 / 🍦 or 🍰 cake at [Daniel Sponsors](https://surge-dan.github.io/sponsor.html) to support me, click the button. Your name will be shown at [https://surge-dan.github.io/sponsor.html](https://surge-dan.github.io/sponsor.html).
+
+<!--START_SECTION:sponsors-->
+<a href="https://surge-dan.github.io/sponsor.html" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" ></a>
