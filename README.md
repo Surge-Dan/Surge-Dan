@@ -18,3 +18,9 @@ If you like ~~Daniel or me~~ or my projects, you can buy me a ☕ coffee 🍉 / 
 
 <!--START_SECTION:sponsors-->
 <a href="https://surge-dan.github.io/sponsor.html" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" ></a>
+
+<br>
+<br>
+<br>
+<br>
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=Surge-Dan&show_icons=true&theme=cobalt" alt="Surge-Dan" />
