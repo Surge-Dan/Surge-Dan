@@ -6,7 +6,7 @@
 
 - 💞️ I’m looking to collaborate on AI
 
-- 📫 How to reach me: DanielMuei@outlook.com
+- 📫 How to reach me: DanielMui@outlook.com
 
 <!---
 Surge-Dan/Surge-Dan is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
