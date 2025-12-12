@@ -27,4 +27,3 @@ If you like ~~Daniel or me~~ or my projects, you can buy me a ☕ coffee 🍉 / 
 <br>
 <br>
 <br>
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=Surge-Dan&show_icons=true&theme=cobalt" alt="Surge-Dan" />
