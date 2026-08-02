@@ -1,8 +1,9 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/Surge-Dan/Surge-Dan/output/header.svg" width="100%" alt="header" />
+
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3500&pause=800&color=F7B93E&center=true&vCenter=true&random=false&width=520&lines=Hi+there+%F0%9F%91%8B+I'm+Daniel;Product+Manager+%F0%9F%A7%AD;AI+Enthusiast+%F0%9F%A4%96;Tech+Idealist+%F0%9F%8E%AF;Coffee-driven+PM+%E2%98%95" alt="Typing SVG" />
 
-<h1>Daniel Mui</h1>
 <p><strong>🧭 Product Manager</strong> · AI Enthusiast · Tech Idealist</p>
 <p>📍 base Guangzhou/Shenzhen</p>
 
@@ -13,8 +14,6 @@
   <a href="https://surge-dan.github.io/"><img src="https://img.shields.io/badge/Homepage-Daniel-1A1A1A?style=for-the-badge&logo=homeadvisor&logoColor=F7B93E" alt="Homepage" /></a>
   <img src="https://komarev.com/ghpvc/?username=Surge-Dan&label=Visitors&style=for-the-badge&color=F7B93E&labelColor=24292e" alt="Visitor Count" />
 </p>
-
-<img src="https://raw.githubusercontent.com/Surge-Dan/Surge-Dan/output/header.svg" width="100%" alt="animated header" />
 
 </div>
 
