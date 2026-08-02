@@ -1,0 +1,3 @@
+# local test output from scripts/gen-stats.mjs (CI writes to the `output` branch instead)
+out/
+*.tmp

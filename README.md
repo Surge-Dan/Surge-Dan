@@ -14,7 +14,7 @@
   <img src="https://komarev.com/ghpvc/?username=Surge-Dan&label=Visitors&style=for-the-badge&color=F7B93E&labelColor=24292e" alt="Visitor Count" />
 </p>
 
-<img src="https://raw.githubusercontent.com/trinib/trinib/main/images/banner.svg" width="100%" alt="banner" />
+<img src="https://raw.githubusercontent.com/Surge-Dan/Surge-Dan/output/header.svg" width="100%" alt="animated header" />
 
 </div>
 
@@ -40,7 +40,7 @@
       <a href="https://github.com/Surge-Dan/Escape-Command">
         <img src="https://img.shields.io/badge/🎮_Escape_Command-Mini_Program-FF6B6B?style=for-the-badge" alt="Escape-Command" />
       </a>
-      <br><sub>A playful mini-program.<br><!-- TODO: one line on its gameplay/highlights --></sub>
+      <br><sub>A playful mini-program —<br>escape-room style command puzzles on WeChat</sub>
     </td>
     <td width="50%" align="center">
       <a href="https://github.com/Surge-Dan/matrix-compass">
@@ -105,12 +105,17 @@
   <a href="mailto:2258578648@qq.com"><img src="https://img.shields.io/badge/Email-Daniel-D14836?style=social&logo=gmail&logoColor=D14836" alt="Email" /></a>
   <a href="https://surge-dan.github.io/"><img src="https://img.shields.io/badge/Homepage-Daniel-1A1A1A?style=social&logo=homeadvisor&logoColor=F7B93E" alt="Homepage" /></a>
   <img src="https://img.shields.io/badge/WeChat-超级硬核的Daniel-07C160?style=social&logo=wechat&logoColor=07C160" alt="WeChat Official Account" />
-  <a href="https://xhslink.cn/m/fXaLhKmbwC"><img src="https://img.shields.io/badge/Xiaohongshu-MelMeg_AI-FF2442?style=social&logo=xiaohongshu&logoColor=FF2442" alt="Xiaohongshu" /></a>
+  <a href="https://xhslink.cn/m/fXaLhKmbwC"><img src="https://img.shields.io/badge/Xiaohongshu-梅尔梅格（AI版）-FF2442?style=social&logo=xiaohongshu&logoColor=FF2442" alt="Xiaohongshu" /></a>
 </p>
 
 ---
 
 <div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Surge-Dan/Surge-Dan/output/wave-divider-dark.svg" />
+  <img src="https://raw.githubusercontent.com/Surge-Dan/Surge-Dan/output/wave-divider.svg" width="100%" alt="wave divider" />
+</picture>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=1000&color=586069&center=true&vCenter=true&width=560&lines=%22Stay+hungry,+stay+foolish.%22;%22Done+is+better+than+perfect.%22;%22Make+something+people+want.%22;%22Keep+shipping.%22" alt="Quote" />
 

@@ -105,6 +105,62 @@ function safeWrite(file, content) {
   fs.renameSync(tmp, file);
 }
 
+// Animated header (replaces the unstable trinib banner).
+// Pure SMIL animation — runs in <img> refs, no external service, China-safe.
+function renderHeader() {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="880" height="120" viewBox="0 0 880 120" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#24292e"/>
+      <stop offset="55%" stop-color="#3a2f1a"/>
+      <stop offset="100%" stop-color="#F7B93E"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F7B93E" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#F7B93E" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F7B93E" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="120" fill="url(#bg)"/>
+  <!-- moving sheen -->
+  <rect x="-200" y="0" width="200" height="120" fill="url(#glow)">
+    <animate attributeName="x" values="-200;880;880;-200" keyTimes="0;0.5;0.5;1" dur="7s" repeatCount="indefinite"/>
+  </rect>
+  <!-- layered waves -->
+  <path fill="#FFFFFF" fill-opacity="0.06">
+    <animate attributeName="d" dur="9s" repeatCount="indefinite"
+      values="M0,78 Q220,52 440,78 T880,78 V120 H0 Z;
+              M0,78 Q220,104 440,78 T880,78 V120 H0 Z;
+              M0,78 Q220,52 440,78 T880,78 V120 H0 Z"/>
+  </path>
+  <path fill="#F7B93E" fill-opacity="0.18">
+    <animate attributeName="d" dur="7s" repeatCount="indefinite"
+      values="M0,92 Q220,72 440,92 T880,92 V120 H0 Z;
+              M0,92 Q220,112 440,92 T880,92 V120 H0 Z;
+              M0,92 Q220,72 440,92 T880,92 V120 H0 Z"/>
+  </path>
+  <path fill="#24292e" fill-opacity="0.5">
+    <animate attributeName="d" dur="11s" repeatCount="indefinite"
+      values="M0,104 Q220,88 440,104 T880,104 V120 H0 Z;
+              M0,104 Q220,120 440,104 T880,104 V120 H0 Z;
+              M0,104 Q220,88 440,104 T880,104 V120 H0 Z"/>
+  </path>
+</svg>`;
+}
+
+// Lightweight animated wave divider — reusable section separator.
+function renderDivider(dark = false) {
+  const fg = dark ? '#F7B93E' : '#24292e';
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="880" height="28" viewBox="0 0 880 28" preserveAspectRatio="none">
+  <path fill="${fg}" fill-opacity="0.9">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="M0,14 Q220,2 440,14 T880,14 V28 H0 Z;
+              M0,14 Q220,26 440,14 T880,14 V28 H0 Z;
+              M0,14 Q220,2 440,14 T880,14 V28 H0 Z"/>
+  </path>
+</svg>`;
+}
+
 (async () => {
   fs.mkdirSync('out', { recursive: true });
   const log = (m) => {
@@ -112,6 +168,18 @@ function safeWrite(file, content) {
     console.log(m);
   };
   log(`start USER=${USER} TOKEN_len=${TOKEN ? TOKEN.length : 'undef'} node=${process.version} fetch=${typeof fetch}`);
+
+  // Decorative assets first — they don't depend on the GitHub API, so they
+  // generate even if the network/REST calls below fail.
+  try {
+    safeWrite('out/header.svg', renderHeader());
+    safeWrite('out/wave-divider.svg', renderDivider(false));
+    safeWrite('out/wave-divider-dark.svg', renderDivider(true));
+    log('wrote header.svg + wave dividers');
+  } catch (e) {
+    log(`decor assets failed: ${e.message}`);
+  }
+
   const u = await gh(`https://api.github.com/users/${USER}`);
   log(`user ok public_repos=${u && u.public_repos} followers=${u && u.followers}`);
   const repos = await getOwnedRepos();
