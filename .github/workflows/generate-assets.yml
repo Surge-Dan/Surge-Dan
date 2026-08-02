@@ -1,0 +1,66 @@
+name: Generate Profile Assets
+
+# Generates GitHub stats SVGs + contribution snake animation,
+# pushes them to the `output` branch, and the README references them
+# via raw.githubusercontent.com (reliable + China-accessible, no rate limit).
+
+on:
+  schedule:
+    - cron: "17 2 * * *"        # daily around 02:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/generate-assets.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout existing output branch so successful files persist across runs
+      # (a failed fetch keeps the previous SVG instead of going blank).
+      - name: Checkout output branch (or init empty)
+        run: |
+          if git clone --branch output --depth 1 "https://github.com/${{ github.repository }}" out 2>/dev/null; then
+            echo "output branch cloned"
+          else
+            mkdir -p out
+            cd out
+            git init -b output
+            cd ..
+            echo "output branch initialized fresh"
+          fi
+
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            out/github-contribution-grid-snake.svg
+            out/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Fetch GitHub stats SVGs
+        run: |
+          cd out
+          fetch() {
+            curl --retry 5 --retry-delay 3 --retry-connrefused -fsSL "$1" -o "$2" 2>/dev/null \
+              || { echo "::warning::failed to fetch $2 (will keep previous version)"; rm -f "$2"; }
+          }
+          U="${{ github.repository_owner }}"
+          fetch "https://github-readme-stats.vercel.app/api?username=${U}&show_icons=true&theme=transparent&hide_border=true&bg_color=00000000&title_color=F7B93E&icon_color=F7B93E&text_color=586069&include_all_commits=true&count_private=true" github-stats.svg
+          fetch "https://github-readme-stats.vercel.app/api/top-langs/?username=${U}&layout=compact&theme=transparent&hide_border=true&bg_color=00000000&title_color=F7B93E&text_color=586069" top-langs.svg
+          fetch "https://streak-stats.demolab.com?user=${U}&theme=transparent&hide_border=true&background=FFFFFF00&ring=F7B93E&fire=F7B93E&currStreakLabel=F7B93E&sideLabels=586069&dates=586069" streak.svg
+
+      - name: Commit & push to output branch
+        run: |
+          cd out
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" 2>/dev/null \
+            || git remote add origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git add -A
+          git commit -m "chore: update profile assets (stats + snake)" || echo "nothing to commit"
+          git push origin output

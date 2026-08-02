@@ -74,18 +74,28 @@
 
 ### 📊 GitHub Stats
 
-<!-- Live data pulled from the GitHub API. The public vercel instance is rate-limited;
-     if a card shows "Something went wrong" or fails to load, deploy your own free instance
-     (https://github.com/anuraghazra/github-readme-stats#deploy-on-your-own) and swap the host below. -->
+<!-- Auto-generated daily by .github/workflows/generate-assets.yml -> output branch.
+     Served from raw.githubusercontent.com so it's reliable & rate-limit-free.
+     If a card is blank, the Action hasn't finished its first run — check the Actions tab. -->
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Surge-Dan&show_icons=true&theme=transparent&hide_border=true&bg_color=00000000&title_color=F7B93E&icon_color=F7B93E&text_color=586069&include_all_commits=true&count_private=true" alt="Daniel's GitHub Stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Surge-Dan&layout=compact&theme=transparent&hide_border=true&bg_color=00000000&title_color=F7B93E&text_color=586069" alt="Top Languages" />
+  <img height="170" src="https://raw.githubusercontent.com/Surge-Dan/Surge-Dan/output/github-stats.svg" alt="Daniel's GitHub Stats" />
+  <img height="170" src="https://raw.githubusercontent.com/Surge-Dan/Surge-Dan/output/top-langs.svg" alt="Top Languages" />
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=Surge-Dan&theme=transparent&hide_border=true&background=FFFFFF00&ring=F7B93E&fire=F7B93E&currStreakLabel=F7B93E&sideLabels=586069&dates=586069" alt="GitHub Streak" />
+  <img src="https://raw.githubusercontent.com/Surge-Dan/Surge-Dan/output/streak.svg" alt="GitHub Streak" />
 </div>
+
+---
+
+### 🐍 Contribution Snake
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Surge-Dan/Surge-Dan/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Surge-Dan/Surge-Dan/output/github-contribution-grid-snake.svg" />
+  <img alt="github contribution snake" src="https://raw.githubusercontent.com/Surge-Dan/Surge-Dan/output/github-contribution-grid-snake.svg" width="100%" />
+</picture>
 
 ---
 
@@ -94,7 +104,7 @@
 <p>
   <a href="mailto:2258578648@qq.com"><img src="https://img.shields.io/badge/Email-Daniel-D14836?style=social&logo=gmail&logoColor=D14836" alt="Email" /></a>
   <a href="https://surge-dan.github.io/"><img src="https://img.shields.io/badge/Homepage-Daniel-1A1A1A?style=social&logo=homeadvisor&logoColor=F7B93E" alt="Homepage" /></a>
-  <img src="https://img.shields.io/badge/WeChat-Super_Hardcore_Daniel-07C160?style=social&logo=wechat&logoColor=07C160" alt="WeChat Official Account" />
+  <img src="https://img.shields.io/badge/WeChat-超级硬核的Daniel-07C160?style=social&logo=wechat&logoColor=07C160" alt="WeChat Official Account" />
   <a href="https://xhslink.cn/m/fXaLhKmbwC"><img src="https://img.shields.io/badge/Xiaohongshu-MelMeg_AI-FF2442?style=social&logo=xiaohongshu&logoColor=FF2442" alt="Xiaohongshu" /></a>
 </p>
 
@@ -105,7 +115,5 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=1000&color=586069&center=true&vCenter=true&width=560&lines=%22Stay+hungry,+stay+foolish.%22;%22Done+is+better+than+perfect.%22;%22Make+something+people+want.%22;%22Keep+shipping.%22" alt="Quote" />
 
 ⭐️ From [Surge-Dan](https://github.com/Surge-Dan) · Updated 2026.08
-
-<!-- 🐍 Want a contribution-graph snake animation? can add a GitHub Action to auto-generate it -->
 
 </div>
