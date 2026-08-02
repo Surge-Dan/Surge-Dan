@@ -46,8 +46,12 @@ jobs:
         run: |
           cd out
           fetch() {
-            curl --retry 5 --retry-delay 3 --retry-connrefused -fsSL "$1" -o "$2" 2>/dev/null \
-              || { echo "::warning::failed to fetch $2 (will keep previous version)"; rm -f "$2"; }
+            if curl --retry 6 --retry-delay 4 --retry-connrefused -fsSL --max-time 30 "$1" -o "$2.tmp" 2>/dev/null; then
+              mv "$2.tmp" "$2"
+            else
+              rm -f "$2.tmp"
+              echo "::warning::failed to fetch $2 (keeping previous version if any)"
+            fi
           }
           U="${{ github.repository_owner }}"
           fetch "https://github-readme-stats.vercel.app/api?username=${U}&show_icons=true&theme=transparent&hide_border=true&bg_color=00000000&title_color=F7B93E&icon_color=F7B93E&text_color=586069&include_all_commits=true&count_private=true" github-stats.svg
