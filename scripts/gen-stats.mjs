@@ -135,5 +135,9 @@ function safeWrite(file, content) {
   console.log('wrote top-langs.svg', sorted.slice(0, 6));
 })().catch((e) => {
   console.error('gen-stats failed:', e.message);
+  try {
+    fs.mkdirSync('out', { recursive: true });
+    fs.writeFileSync('out/gen-stats-error.txt', `${new Date().toISOString()}\n${e.stack || e.message}\n`);
+  } catch (_) {}
   process.exitCode = 0; // non-fatal: keep snake/streak commit intact
 });
