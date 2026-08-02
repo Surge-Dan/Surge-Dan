@@ -8,7 +8,7 @@
 
 <p>
   <a href="https://github.com/Surge-Dan?tab=followers"><img src="https://img.shields.io/github/followers/Surge-Dan?label=Followers&style=for-the-badge&color=24292e&labelColor=24292e" alt="Followers" /></a>
-  <a href="https://github.com/Surge-Dan?tab=stars"><img src="https://img.shields.io/badge/Stars-210%2B-F7B93E?style=for-the-badge&logo=github" alt="Stars" /></a>
+  <a href="https://github.com/Surge-Dan?tab=stars"><img src="https://img.shields.io/github/stars/Surge-Dan?style=for-the-badge&label=Stars&color=F7B93E&logo=github" alt="Stars" /></a>
   <a href="mailto:2258578648@qq.com"><img src="https://img.shields.io/badge/Email-Daniel-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://surge-dan.github.io/"><img src="https://img.shields.io/badge/Homepage-Daniel-1A1A1A?style=for-the-badge&logo=homeadvisor&logoColor=F7B93E" alt="Homepage" /></a>
   <img src="https://komarev.com/ghpvc/?username=Surge-Dan&label=Visitors&style=for-the-badge&color=F7B93E&labelColor=24292e" alt="Visitor Count" />

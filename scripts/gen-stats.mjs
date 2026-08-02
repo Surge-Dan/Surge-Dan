@@ -107,8 +107,15 @@ function safeWrite(file, content) {
 
 (async () => {
   fs.mkdirSync('out', { recursive: true });
+  const log = (m) => {
+    try { fs.appendFileSync('out/gen-stats.log', `${new Date().toISOString()} ${m}\n`); } catch (_) {}
+    console.log(m);
+  };
+  log(`start USER=${USER} TOKEN_len=${TOKEN ? TOKEN.length : 'undef'} node=${process.version} fetch=${typeof fetch}`);
   const u = await gh(`https://api.github.com/users/${USER}`);
+  log(`user ok public_repos=${u && u.public_repos} followers=${u && u.followers}`);
   const repos = await getOwnedRepos();
+  log(`repos=${repos.length} stars=${repos.reduce((s, r) => s + r.stargazers_count, 0)}`);
   const stars = repos.reduce((s, r) => s + r.stargazers_count, 0);
   const forks = repos.reduce((s, r) => s + r.forks_count, 0);
 
@@ -120,7 +127,7 @@ function safeWrite(file, content) {
     ['Following', u.following],
   ];
   safeWrite('out/github-stats.svg', renderStats(rows));
-  console.log('wrote github-stats.svg', rows);
+  log('wrote github-stats.svg');
 
   const langBytes = {};
   for (const r of repos) {
@@ -132,12 +139,12 @@ function safeWrite(file, content) {
   }
   const sorted = Object.entries(langBytes).sort((a, b) => b[1] - a[1]);
   safeWrite('out/top-langs.svg', renderLangs(sorted));
-  console.log('wrote top-langs.svg', sorted.slice(0, 6));
+  log(`wrote top-langs.svg langs=${sorted.length}`);
 })().catch((e) => {
   console.error('gen-stats failed:', e.message);
   try {
     fs.mkdirSync('out', { recursive: true });
-    fs.writeFileSync('out/gen-stats-error.txt', `${new Date().toISOString()}\n${e.stack || e.message}\n`);
+    fs.appendFileSync('out/gen-stats.log', `${new Date().toISOString()} FAILED: ${e.stack || e.message}\n`);
   } catch (_) {}
   process.exitCode = 0; // non-fatal: keep snake/streak commit intact
 });
