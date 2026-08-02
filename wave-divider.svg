@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="28" viewBox="0 0 880 28" preserveAspectRatio="none">
+  <path fill="#24292e" fill-opacity="0.9">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="M0,14 Q220,2 440,14 T880,14 V28 H0 Z;
+              M0,14 Q220,26 440,14 T880,14 V28 H0 Z;
+              M0,14 Q220,2 440,14 T880,14 V28 H0 Z"/>
+  </path>
+</svg>
