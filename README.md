@@ -33,24 +33,20 @@
 
 ### 🚀 Building
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://github.com/Surge-Dan/Escape-Command">
-        <img src="https://img.shields.io/badge/🎮_Escape_Command-Mini_Program-FF6B6B?style=for-the-badge" alt="Escape-Command" />
-      </a>
-      <br><sub>A playful mini-program —<br>escape-room style command puzzles on WeChat</sub>
-    </td>
-    <td width="50%" align="center">
-      <a href="https://github.com/Surge-Dan/matrix-compass">
-        <img src="https://img.shields.io/badge/📊_matrix_compass-Ops_Dashboard-4ECDC4?style=for-the-badge" alt="matrix-compass" />
-      </a>
-      <br><sub>Cross-platform self-media ops dashboard —<br>unified analytics for Douyin / Xiaohongshu / WeChat</sub>
-    </td>
-  </tr>
-</table>
+Reusable AI skills and small products for work, creativity and everyday life.
 
-<!-- 📌 Want more projects? add another row, or swap in Pinned repo cards -->
+<!-- Each card links to its repository. Fixed-width images wrap on narrow screens.
+     Regenerate both themes with: python scripts/generate-project-cards.py -->
+<p>
+  <a href="https://github.com/Surge-Dan/small-tool-design-workshop"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/small-tool-workshop-dark.svg" /><img src="assets/projects/small-tool-workshop-light.svg" width="360" alt="Small Tool Design Workshop — high-fidelity HTML prototypes" /></picture></a>
+  <a href="https://github.com/Surge-Dan/reading-book-skill"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/reading-yearbook-dark.svg" /><img src="assets/projects/reading-yearbook-light.svg" width="360" alt="年年阅 / Reading Yearbook — offline reading yearbooks and share cards" /></picture></a>
+  <a href="https://github.com/Surge-Dan/healthy-fitness-coach-skill"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/fitness-coach-dark.svg" /><img src="assets/projects/fitness-coach-light.svg" width="360" alt="Healthy Fitness Coach — training, nutrition, recovery and progress reviews" /></picture></a>
+  <a href="https://github.com/Surge-Dan/image-prompt-crafter-skill"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/image-prompt-crafter-dark.svg" /><img src="assets/projects/image-prompt-crafter-light.svg" width="360" alt="Image Prompt Crafter — image prompts, diagnosis and iteration" /></picture></a>
+  <a href="https://github.com/Surge-Dan/hand-drawn-flow-skill"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/hand-drawn-flow-dark.svg" /><img src="assets/projects/hand-drawn-flow-light.svg" width="360" alt="Hand-Drawn Flow — hand-drawn diagrams from text and documents (preview)" /></picture></a>
+  <a href="https://github.com/Surge-Dan/matrix-compass-skill"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/matrix-compass-dark.svg" /><img src="assets/projects/matrix-compass-light.svg" width="360" alt="Matrix Compass — a local creator workspace for content, schedules and income" /></picture></a>
+  <a href="https://github.com/Surge-Dan/pm-sop-skill"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/pm-sop-dark.svg" /><img src="assets/projects/pm-sop-light.svg" width="360" alt="PM SOP — reusable product management methods and workflows" /></picture></a>
+  <a href="https://github.com/Surge-Dan/escape-command"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/escape-command-dark.svg" /><img src="assets/projects/escape-command-light.svg" width="360" alt="Escape Command / 出逃指令 — short city adventures in a WeChat mini program" /></picture></a>
+</p>
 
 ---
 
@@ -118,6 +114,6 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=1000&color=586069&center=true&vCenter=true&width=560&lines=%22Stay+hungry,+stay+foolish.%22;%22Done+is+better+than+perfect.%22;%22Make+something+people+want.%22;%22Keep+shipping.%22" alt="Quote" />
 
-⭐️ From [Surge-Dan](https://github.com/Surge-Dan) · Updated 2026.08
+⭐️ From [Surge-Dan](https://github.com/Surge-Dan) · Updated 2026.10
 
 </div>

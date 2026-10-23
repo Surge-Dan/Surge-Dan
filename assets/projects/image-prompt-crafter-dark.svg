@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="264" viewBox="0 0 640 264" role="img" aria-labelledby="title desc">
+  <title id="title">Image Prompt Crafter</title>
+  <desc id="desc">Turn the picture in your head into a prompt. Refine the idea. Diagnose what went wrong. AGENT SKILL. View the repository.</desc>
+  <rect x="1" y="1" width="638" height="254" rx="18" fill="#111820" stroke="#2b3541"/>
+  <path d="M30 1h42" stroke="#f1c46e" stroke-width="3"/>
+  <g font-family="'Trebuchet MS', 'Segoe UI', sans-serif">
+    <text x="30" y="45" fill="#97a5b5" font-size="16" font-family="Consolas, monospace">04</text>
+    <path d="M61 31v16" stroke="#2b3541"/>
+    <text x="76" y="45" fill="#f1c46e" font-size="16" font-weight="700" letter-spacing="0.8">VISUAL CREATION</text>
+    <rect x="555" y="24" width="50" height="50" rx="14" fill="#24241f"/>
+    <g transform="translate(564 33)" fill="none" stroke="#f1c46e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 3 3.5 9.5L29 16l-9.5 3.5L16 29l-3.5-9.5L3 16l9.5-3.5L16 3ZM27 3v6M24 6h6"/></g>
+    <text x="30" y="104" fill="#f0f3f6" font-size="32" font-weight="700" letter-spacing="-0.7">Image Prompt Crafter</text>
+    <text x="30" y="146" fill="#b6c1ce" font-size="22">Turn the picture in your head into a prompt.</text>
+    <text x="30" y="176" fill="#b6c1ce" font-size="22">Refine the idea. Diagnose what went wrong.</text>
+    <path d="M30 200h575" stroke="#2a333d"/>
+    <text x="30" y="231" fill="#f1c46e" font-size="17" font-weight="700" letter-spacing="0.5">AGENT SKILL</text>
+    <text x="605" y="231" text-anchor="end" fill="#97a5b5" font-size="17" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif">IMAGE PROMPTS</text>
+  </g>
+</svg>

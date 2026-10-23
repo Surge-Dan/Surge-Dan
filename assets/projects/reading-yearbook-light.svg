@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="264" viewBox="0 0 640 264" role="img" aria-labelledby="title desc">
+  <title id="title">Reading Yearbook</title>
+  <desc id="desc">Turn reading records into a personal yearbook. Browse offline. Export cards worth sharing. AGENT SKILL. View the repository.</desc>
+  <rect x="1" y="1" width="638" height="254" rx="18" fill="#fffcf6" stroke="#dfd5c5"/>
+  <path d="M30 1h42" stroke="#805b1e" stroke-width="3"/>
+  <g font-family="'Trebuchet MS', 'Segoe UI', sans-serif">
+    <text x="30" y="45" fill="#5a6673" font-size="16" font-family="Consolas, monospace">02</text>
+    <path d="M61 31v16" stroke="#dfd5c5"/>
+    <text x="76" y="45" fill="#805b1e" font-size="16" font-weight="700" letter-spacing="0.8">READING &amp; SHARING</text>
+    <rect x="555" y="24" width="50" height="50" rx="14" fill="#f2e9d8"/>
+    <g transform="translate(564 33)" fill="none" stroke="#805b1e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7C12 4 6 4 3 6v22c4-2 9-2 13 1 4-3 9-3 13-1V6c-3-2-9-2-13 1Z"/><path d="M16 7v22M7 10h5M20 10h5M7 15h5M20 15h5"/></g>
+    <text x="30" y="104" fill="#202832" font-size="32" font-weight="700" letter-spacing="-0.7">Reading Yearbook</text>
+    <text x="30" y="146" fill="#4c5a69" font-size="22">Turn reading records into a personal yearbook.</text>
+    <text x="30" y="176" fill="#4c5a69" font-size="22">Browse offline. Export cards worth sharing.</text>
+    <path d="M30 200h575" stroke="#e9dfd0"/>
+    <text x="30" y="231" fill="#805b1e" font-size="17" font-weight="700" letter-spacing="0.5">AGENT SKILL</text>
+    <text x="605" y="231" text-anchor="end" fill="#5a6673" font-size="17" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif">年年阅</text>
+  </g>
+</svg>
